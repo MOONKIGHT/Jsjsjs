@@ -18,8 +18,8 @@ exports.run = {
             client.menu[id] = [
                await client.sendTemplateButton(m.chat, global.setting.cover, menu(isPrefix, m, readmore, setting), '', [{
                      urlButton: {
-                        displayText: `Script`,
-                        url: `https://github.com/neoxr/neoxr-bot`
+                        displayText: `OWNER`,
+                        url: `wa.me/94771323434`
                      }
                   },
                   {
