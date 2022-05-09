@@ -44,7 +44,7 @@ module.exports = (m) => {
          if (!('banned' in group)) group.banned = false
          if (!('mute' in group)) group.mute = false
          if (!('game' in group)) group.game = false
-         if (!('welcome' in group)) group.welcome = false
+         if (!('welcome' in group)) group.welcome = true
          if (!('textwel' in group)) group.textwel = ''
          if (!('left' in group)) group.left = false
          if (!('textleft' in group)) group.textleft = ''
@@ -53,7 +53,7 @@ module.exports = (m) => {
          if (!('localonly' in group)) group.localonly = false
          if (!('nodelete' in group)) group.nodelete = false
          if (!('nobadword' in group)) group.nobadword = false
-         if (!('nolink' in group)) group.nolink = false
+         if (!('nolink' in group)) group.nolink = true
          if (!('novirtex' in group)) group.novirtex = false
          if (!isNumber(group.expired)) group.expired = 0
          if (!('stay' in group)) group.stay = false
@@ -64,7 +64,7 @@ module.exports = (m) => {
             banned: false,
             mute: false,
             game: false,
-            welcome: false,
+            welcome: true,
             textwel: '',
             left: false,
             textleft: '',
@@ -73,7 +73,7 @@ module.exports = (m) => {
             localonly: false,
             nodelete: true,
             nobadword: false,
-            nolink: false,
+            nolink: true,
             novirtex: false,
             expired: 0,
             stay: false,
@@ -108,15 +108,15 @@ module.exports = (m) => {
       if (!isNumber(setting.receiveSize)) setting.receiveSize = 0
       if (!('toxic' in setting)) setting.toxic = ["ajg", "ajig", "anjas", "anjg", "anjim", "anjing", "anjrot", "anying", "asw", "autis", "babi", "bacod", "bacot", "bagong", "bajingan", "bangsad", "bangsat", "bastard", "bego", "bgsd", "biadab", "biadap", "bitch", "bngst", "bodoh", "bokep", "cocote", "coli", "colmek", "comli", "dajjal", "dancok", "dongo", "fuck", "gelay", "goblog", "goblok", "guoblog", "guoblok", "hairul", "henceut", "idiot", "itil", "jamet", "jancok", "jembut", "jingan", "kafir", "kanjut", "kanyut", "keparat", "kntl", "kontol", "lana", "loli", "lont", "lonte", "mancing", "meki", "memek", "ngentod", "ngentot", "ngewe", "ngocok", "ngtd", "njeng", "njing", "njinx", "oppai", "pantek", "pantek", "peler", "pepek", "pilat", "pler", "pornhub", "pucek", "puki", "pukimak", "redhub", "sange", "setan", "silit", "telaso", "tempek", "tete", "titit", "toket", "tolol", "tomlol", "tytyd", "wildan", "xnxx"]
       if (!('sk_pack' in setting)) setting.sk_pack = 'Sticker'
-      if (!('sk_author' in setting)) setting.sk_author = '@neoxrs'
+      if (!('sk_author' in setting)) setting.sk_author = '@⃧ᴍ⃥⃧͢🌑⃥⃭⃧🌕̶̷⃮⃧ɴ ⃥ᴋ⃯⃗ɴ⃧ɪ⃬⃗ɢ⃧ʜ⃯⃗ᴛ ʙ⃔⃧ᴏ⃕⃧ᴛ⃕-ᴢ⃕🌙'
       if (!('multiprefix' in setting)) setting.multiprefix = true
       if (!('prefix' in setting)) setting.prefix = ['.', '/', '!', '#']
       if (!('onlyprefix' in setting)) setting.onlyprefix = '+'
-      if (!('owners' in setting)) setting.owners = ['6285887776722']
-      if (!('cover' in setting)) setting.cover = 'https://telegra.ph/file/b277cff79c78eba2d9661.jpg'
-      if (!('header' in setting)) setting.header = 'JUST FOR FUN'
-      if (!('msg' in setting)) setting.msg = 'I am a Whatsapp BOT, use a bot in private chat so that bots can respond quickly.'
-      if (!('footer' in setting)) setting.footer = 'ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ ᴡᴀɴɢsᴀғ ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ɴᴇᴏxʀ ッ'
+      if (!('owners' in setting)) setting.owners = ['94771323434']
+      if (!('cover' in setting)) setting.cover = 'https://www.linkpicture.com/q/IMG-20220507-WA0010_1.jpg'
+      if (!('header' in setting)) setting.header = '@⁨⃢🇱🇰⃟ ₇₇₁ͥ₃ᷟ⃢₂ͣ₃ᷤ₄ͪ₃₄ͯ͝ϟͯ⃟🙂⁩'
+      if (!('msg' in setting)) setting.msg = 'I am a Whatsapp BOT.'
+      if (!('footer' in setting)) setting.footer = 'sɪᴍᴘᴇʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ'
    } else {
       global.db.setting = {
          autobackup: false,
@@ -130,15 +130,15 @@ module.exports = (m) => {
          receiveSize: 0,
          toxic: ["ajg", "ajig", "anjas", "anjg", "anjim", "anjing", "anjrot", "anying", "asw", "autis", "babi", "bacod", "bacot", "bagong", "bajingan", "bangsad", "bangsat", "bastard", "bego", "bgsd", "biadab", "biadap", "bitch", "bngst", "bodoh", "bokep", "cocote", "coli", "colmek", "comli", "dajjal", "dancok", "dongo", "fuck", "gelay", "goblog", "goblok", "guoblog", "guoblok", "hairul", "henceut", "idiot", "itil", "jamet", "jancok", "jembut", "jingan", "kafir", "kanjut", "kanyut", "keparat", "kntl", "kontol", "lana", "loli", "lont", "lonte", "mancing", "meki", "memek", "ngentod", "ngentot", "ngewe", "ngocok", "ngtd", "njeng", "njing", "njinx", "oppai", "pantek", "pantek", "peler", "pepek", "pilat", "pler", "pornhub", "pucek", "puki", "pukimak", "redhub", "sange", "setan", "silit", "telaso", "tempek", "tete", "titit", "toket", "tolol", "tomlol", "tytyd", "wildan", "xnxx"],
          sk_pack: 'Sticker',
-         sk_author: '@neoxrs',
+         sk_author: '@⃧ᴍ⃥⃧͢🌑⃥⃭⃧🌕̶̷⃮⃧ɴ ⃥ᴋ⃯⃗ɴ⃧ɪ⃬⃗ɢ⃧ʜ⃯⃗ᴛ ʙ⃔⃧ᴏ⃕⃧ᴛ⃕-ᴢ⃕🌙',
          multiprefix: true,
          prefix: ['.', '#', '!', '/'],
          onlyprefix: '+',
-         owners: ['6285887776722'],
-         cover: 'https://telegra.ph/file/b277cff79c78eba2d9661.jpg',
-         header: 'JUST FOR FUN',
-         msg: 'I am a Whatsapp BOT, use a bot in private chat so that bots can respond quickly.',
-         footer: 'ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ ᴡᴀɴɢsᴀғ ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ɴᴇᴏxʀ ッ'
+         owners: ['94771323434'],
+         cover: 'https://www.linkpicture.com/q/IMG-20220507-WA0010_1.jpg',
+         header: '⃧ᴍ⃥⃧͢🌑⃥⃭⃧🌕̶̷⃮⃧ɴ ⃥ᴋ⃯⃗ɴ⃧ɪ⃬⃗ɢ⃧ʜ⃯⃗ᴛ ʙ⃔⃧ᴏ⃕⃧ᴛ⃕-ᴢ⃕🌙',
+         msg: 'I am a Whatsapp BOT.',
+         footer: 'sɪᴍᴘᴇʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ'
       }
    }
 }
