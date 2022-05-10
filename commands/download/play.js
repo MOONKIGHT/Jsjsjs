@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['play'],
+   usage: ['song'],
    async: async (m, {
       client,
       text,
