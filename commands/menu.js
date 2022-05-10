@@ -30,8 +30,8 @@ exports.run = {
                   },
                   {
                      quickReplyButton: {
-                        displayText: 'Hitstat',
-                        id: `${isPrefix}hitstat`
+                        displayText: 'INFO BOT',
+                        id: `${isPrefix}botinfo`
                      }
                   }
                ], {
