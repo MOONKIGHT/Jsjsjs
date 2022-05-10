@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['ping','Alive'],
+   usage: ['ping','alive'],
    async: async (m, {
       client,
       text
