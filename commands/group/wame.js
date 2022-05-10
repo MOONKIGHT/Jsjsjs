@@ -5,7 +5,7 @@ exports.run = {
       text
    }) => {
       let number = m.quoted ? (m.quoted.sender).split`@` [0] : (m.sender).split`@` [0]
-      let chat = text ? text : 'Hai kak'
+      let chat = text ? text : 'Hi'
       await client.reply(m.chat, `https://wa.me/${number}?text=${chat.replace(/\s/gi, '+')}`, m)
    },
    error: false
