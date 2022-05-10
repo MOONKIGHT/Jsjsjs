@@ -24,8 +24,8 @@ exports.run = {
                   },
                   {
                      quickReplyButton: {
-                        displayText: 'Botstat',
-                        id: `${isPrefix}stat`
+                        displayText: 'PING',
+                        id: `${isPrefix}ping`
                      }
                   },
                   {
